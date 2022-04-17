@@ -1,7 +1,13 @@
-import React from 'react';
+import React, { useContext } from 'react';
 import './SelectMenu.css';
 
-function SelectMenu() {
+
+type stateType = number[]
+
+function SelectMenu(props :any) {
+
+    let state :stateType = useContext(stateContext);
+
   return (
     <div className='selectMenu colum'>
         <div>
